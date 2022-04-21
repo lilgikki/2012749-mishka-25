@@ -1,4 +1,5 @@
 @import "style-details.less";
+@import "fonts.less";
 @import "page.less";
 @import "main-nav.less";
 @import "main-header.less";
@@ -13,38 +14,3 @@
 @import "video.less";
 @import "make-order.less";
 @import "control.less";
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/opensans.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  font-display: swap;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
