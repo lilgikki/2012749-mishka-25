@@ -1,12 +1,14 @@
 .catalog {
   background-color: @lightgray;
 }
+
 .catalog__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
 .catalog__link {
   display: block;
   text-decoration: none;
@@ -18,19 +20,23 @@
   padding-bottom: 31px;
   padding-left: 30px;
 }
+
 @media (min-width: @tablet-width) {
   .catalog__list {
     flex-direction: row;
     width: 668px;
   }
+
   .catalog__item {
     width: 334px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .catalog__list {
     width: 1050px;
   }
+  
   .catalog__item {
     width: 525px;
   }
