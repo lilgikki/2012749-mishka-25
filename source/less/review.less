@@ -5,30 +5,25 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
-
 .review__item {
   margin: 0;
 }
-
 .review__text {
   line-height: 30px;
 }
-
 .review__author {
   font-style: normal;
   font-size: 17px;
   line-height: 24px;
 }
-
 .review__link {
   line-height: 30px;
 }
-
 @media (min-width: @tablet-width) {
   .review {
     width: 668px;
     display: grid;
-    grid-template-columns:  repeat(4, 167px);
+    grid-template-columns: repeat(4, 167px);
     grid-auto-rows: max-content;
   }
   .review__title {
@@ -45,12 +40,11 @@
     grid-area: 1 / 4 / 2 / 5;
   }
 }
-
 @media (min-width: @desktop-width) {
   .review {
     width: 1050px;
     display: grid;
-    grid-template-columns:  repeat(6, 175px);
+    grid-template-columns: repeat(6, 175px);
     grid-auto-rows: max-content;
   }
   .review__title {
