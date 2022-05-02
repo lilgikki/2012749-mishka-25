@@ -1,20 +1,41 @@
 .catalog {
-  background-color: #f1f1f1;
-  background-image: url("../img/hero-desktop.png");
+  background-color: @lightgray;
 }
 
-.catalog__interior {
-  background-color: #63d1bb;
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
 }
 
-.catalog__childs-toys {
-  background-color: #56c3b2;
+.catalog__item {
+  @media (min-width: @tablet-width) {
+    width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
 }
 
 .catalog__link {
+  display: block;
   text-decoration: none;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px; /* or 126% */
   color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
 }

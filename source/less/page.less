@@ -1,5 +1,6 @@
 .page {
   height: 100%;
+  box-sizing: border-box;
 }
 
 .page__body {
@@ -11,11 +12,23 @@
 }
 
 .page__title {
-  margin: 0;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px; /* or 111% */
   text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .page__about {

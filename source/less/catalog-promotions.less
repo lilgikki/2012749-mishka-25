@@ -1,5 +1,16 @@
 .catalog-promotions {
-  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1050px;
+  }
 }
 
 .catalog-promotions__link {
@@ -11,7 +22,34 @@
 }
 
 .catalog-promotions__about {
+  width: 259px;
   font-size: 15px;
   line-height: 24px;
   margin: 0;
+  text-align: end;
+}
+
+.catalog-promotions__item {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin-right: 45px;
+  }
+}
+
+.catalog-promotions__item:last-of-type {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.catalog-promotions__item--about {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+  }
 }
