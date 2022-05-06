@@ -1,5 +1,6 @@
 .catalog {
   background-color: @lightgray;
+  position: relative;
 }
 
 .catalog__list {
@@ -29,13 +30,59 @@
 }
 
 .catalog__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
+  color: #ffffff;
+}
+
+.catalog__text {
   font-weight: 700;
   font-size: 19px;
-  line-height: 24px; /* or 126% */
+  line-height: 24px;
   color: #ffffff;
   padding-top: 24px;
   padding-bottom: 31px;
   padding-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 46px;
+    padding-left: 36px;
+  }
+}
+
+.catalog__icon {
+  align-self: center;
+  margin-right: 36px;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+    margin-top: 30px;
+  }
+}
+
+.catalog__icon--childs {
+  margin-right: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 34px;
+  }
+}
+
+.catalog__zigzag {
+  display: none;
+  width: 100%;
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 105px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 102px;
+  }
 }
