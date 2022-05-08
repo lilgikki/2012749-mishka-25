@@ -51,7 +51,6 @@
 .contacts__title {
   @media (min-width: @desktop-width) {
     margin-top: 79px;
-    height: fit-content;
   }
 }
 
@@ -71,8 +70,12 @@
 }
 
 .contacts__item {
+  display: flex;
+  margin-bottom: 30px;
+
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -92,7 +95,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: fit-content;
     margin: 0;
     width: 226px;
     grid-area: 2 / 2 / 3 / 4;
