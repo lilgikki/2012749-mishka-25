@@ -33,4 +33,25 @@
 
 .page__about {
   font-size: 13px;
+  margin-top: 17px;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 668px;
+    margin-top: 54px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 702px;
+    margin-left: 175px;
+    margin-top: 98px;
+  }
+}
+
+.page__container {
+  position: relative;
 }
