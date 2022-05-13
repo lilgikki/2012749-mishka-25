@@ -3,6 +3,29 @@
   position: relative;
 }
 
+.catalog::after {
+  content: "";
+  background-image: url("../img/zigzag-fill-desktop.svg");
+  background-repeat: repeat-x;
+  display: none;
+  width: 100%;
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    background-size: cover;
+    min-width: 770px;
+    height: 24px;
+    display: block;
+    bottom: -5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1150px;
+    height: 34px;
+    bottom: 0;
+  }
+}
+
 .catalog__list {
   display: flex;
   flex-direction: column;
