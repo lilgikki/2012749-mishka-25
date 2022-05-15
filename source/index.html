@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -130,9 +134,9 @@
           </dl>
         </div>
         <picture class="weekly-item__photo">
-          <source media="(min-width: 1150px)" srcset="img/weekly-item-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/weekly-item-tablet.png">
-          <img src="img/weekly-item-mobile.png" alt="Фото товара недели">
+          <source media="(min-width: 1150px)" srcset="img/weekly-item-desktop.png 1x, img/weekly-item-desktop@2.png 2x, img/weekly-item-desktop@3.png 3x, img/weekly-item-desktop@4.png 4x">
+          <source media="(min-width: 768px)" srcset="img/weekly-item-tablet.png 1x, img/weekly-item-tablet@2.png 2x, img/weekly-item-tablet@3.png 3x, img/weekly-item-tablet@4.png 4x">
+          <img src="img/weekly-item-mobile.png" srcset="img/weekly-item-mobile@2.png 2x, img/weekly-item-mobile@3.png 3x,img/weekly-item-mobile@4.png 4x" alt="Фото товара недели">
         </picture>
         <div class="weekly-item__container weekly-item__container--buy">
           <p class="weekly-item__price">Цена: 990 руб.</p>

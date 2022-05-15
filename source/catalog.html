@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -78,24 +82,24 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="products__list list">
           <li class="products__item">
-              <picture class="products__container">
-                <source media="(min-width: 1150px)" srcset="img/product-1-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/product-1-tablet.png">
-                <img class="products__img" alt="Фотография товара" src="img/product-1-mobile.png">
-              </picture>
-              <button class="products__add" type="button">
-                <div class="products__text">
-                  <b class="products__name block-title">Зайчик-попрыгайчик</b>
-                  <span class="products__description small-text">Рост 30 см, вес 200 г</span>
-                </div>
-                <b class="products__price">1 200 руб.</b>
-              </button>
+            <picture class="products__container">
+              <source media="(min-width: 1150px)" srcset="img/product-1-desktop.png 1x, img/product-1-desktop@2.png 2x, img/product-1-desktop@3.png 3x, img/product-1-desktop@4.png 4x">
+              <source media="(min-width: 768px)" srcset="img/product-1-tablet.png 1x, img/product-1-tablet@2.png 2x, img/product-1-tablet@3.png 3x, img/product-1-tablet@4.png 4x">
+              <img class="products__img" alt="Фотография товара" src="img/product-1-mobile.png" scrset="img/product-1-mobile@2.png 2x, img/product-1-mobile@3.png 3x, img/product-1-mobile@4.png 4x">
+            </picture>
+            <button class="products__add" type="button">
+              <div class="products__text">
+                <b class="products__name block-title">Зайчик-попрыгайчик</b>
+                <span class="products__description small-text">Рост 30 см, вес 200 г</span>
+              </div>
+              <b class="products__price">1 200 руб.</b>
+            </button>
           </li>
           <li class="products__item">
             <picture class="products__container">
-              <source media="(min-width: 1150px)" srcset="img/product-2-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/product-2-tablet.png">
-              <img class="products__img" alt="Фотография товара" src="img/product-2-mobile.png">
+              <source media="(min-width: 1150px)" srcset="img/product-2-desktop.png 1x, img/product-2-desktop@2.png 2x, img/product-2-desktop@3.png 3x, img/product-2-desktop@4.png 4x">
+              <source media="(min-width: 768px)" srcset="img/product-2-tablet.png 1x, img/product-2-tablet@2.png 2x, img/product-2-tablet@3.png 3x, img/product-2-tablet@4.png 4x">
+              <img class="products__img" alt="Фотография товара" src="img/product-2-mobile.png" scrset="img/product-2-mobile@2.png 2x, img/product-2-mobile@3.png 3x, img/product-2-mobile@4.png 4x">
             </picture>
             <button class="products__add" type="button">
               <div class="products__text">
@@ -107,9 +111,9 @@
           </li>
           <li class="products__item">
             <picture class="products__container">
-              <source media="(min-width: 1150px)" srcset="img/product-3-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/product-3-tablet.png">
-              <img class="products__img" alt="Фотография товара" src="img/product-3-mobile.png">
+              <source media="(min-width: 1150px)" srcset="img/product-3-desktop.png 1x, img/product-3-desktop@2.png 2x, img/product-3-desktop@3.png 3x, img/product-3-desktop@4.png 4x">
+              <source media="(min-width: 768px)" srcset="img/product-3-tablet.png 1x, img/product-3-tablet@2.png 2x, img/product-3-tablet@3.png 3x, img/product-3-tablet@4.png 4x">
+              <img class="products__img" alt="Фотография товара" src="img/product-3-mobile.png" scrset="img/product-3-mobile@2.png 2x, img/product-3-mobile@3.png 3x, img/product-3-mobile@4.png 4x">
             </picture>
             <button class="products__add products__add--long-name" type="button">
               <div class="products__text">

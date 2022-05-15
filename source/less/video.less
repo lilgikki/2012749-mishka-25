@@ -71,6 +71,7 @@
 }
 
 .video__img {
+  position: relative;
   width: 260px;
   height: 150px;
 
@@ -84,6 +85,17 @@
     width: 683px;
     height: 100%;
   }
+}
+
+.video__img::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 77px;
+  background-image: url("../img/play.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .video__about {
