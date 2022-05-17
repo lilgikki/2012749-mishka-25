@@ -5,22 +5,24 @@
 
 .catalog::after {
   content: "";
-  background-image: url("../img/zigzag-fill-desktop.svg");
+  background-image: url("../img/zigzag-fill-tablet.svg");
   background-repeat: repeat-x;
   display: none;
   width: 100%;
   position: absolute;
 
   @media (min-width: @tablet-width) {
-    bottom: -2px;
-    background-size: cover;
-    min-width: 770px;
+    bottom: -1px;
+    background-size: 770px;
     height: 24px;
     display: block;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 1150px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    bottom: -5px;
+    left: 10px;
+    background-size: 1250px 34px;
     height: 34px;
   }
 }
@@ -102,10 +104,6 @@
 
   @media (min-width: @tablet-width) {
     top: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 36px;
   }
 }
 
