@@ -1,3 +1,25 @@
+.site-list__item {
+  @media (min-width: @desktop-width) {
+    border-right: 1px solid #ececec;
+  }
+}
+
+.site-list__item:last-of-type {
+  @media (min-width: @desktop-width) {
+    border-right: none;
+  }
+}
+
+.site-list__link {
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
+}
+
 .site-list__link--catalog {
   @media (min-width: @desktop-width) {
     width: 184px;
