@@ -132,3 +132,23 @@
 .control__input--box:checked ~ .control__label--box::after {
   display: block;
 }
+
+.control__label:hover::before {
+  border-color: #62d1ba;
+}
+
+.control__label:active::before {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.control__text:focus-visible {
+  outline: none;
+}
+
+.control__text:hover {
+  border-color: #62d1ba;
+}
+
+.control__text:active {
+  border-color: #62d1ba;
+}

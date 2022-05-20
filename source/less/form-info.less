@@ -29,6 +29,14 @@
   }
 }
 
+.form-info--tel:hover::after {
+  background-image: url("../img/form-phone--blue.svg");
+}
+
+.form-info--tel:active::after {
+  background-image: url("../img/form-phone--blue.svg");
+}
+
 .form-info--email {
   position: relative;
 
@@ -58,6 +66,14 @@
   @media (min-width: @desktop-width) {
     right: 179px;
   }
+}
+
+.form-info--email:hover::after {
+  background-image: url("../img/form-mail--blue.svg");
+}
+
+.form-info--email:active::after {
+  background-image: url("../img/form-mail--blue.svg");
 }
 
 .form-info--add {
@@ -158,4 +174,16 @@
     width: 0;
     height: 0;
   }
+}
+
+.form-info__text:focus-visible {
+  outline: none;
+}
+
+.form-info__text:hover {
+  border-color: #62d1ba;
+}
+
+.form-info__text:active {
+  border-color: #62d1ba;
 }
