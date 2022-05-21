@@ -10,7 +10,7 @@ buttonBuy.addEventListener('click', function () {
 
 modal.addEventListener('click', e => {
   const target = e.target;
-  if (!target.closest('.modal__container')) {  
+  if (!target.closest('.modal__container')) {
     modal.classList.remove('modal--active');
     modal.classList.add('modal--noactive');
   }
