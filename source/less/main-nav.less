@@ -46,10 +46,12 @@
 
 .main-nav__logo:hover {
   opacity: 0.6;
+  transition: 250ms;
 }
 
 .main-nav__logo:active {
   opacity: 0.3;
+  transition: 250ms;
 }
 
 .main-nav__item {
@@ -84,21 +86,25 @@
 
 .main-nav__link:hover .main-nav__text {
   opacity: 0.6;
+  transition: 250ms;
 }
 
 .main-nav__link:active .main-nav__text {
   opacity: 0.3;
+  transition: 250ms;
 }
 
-.main-nav__link:hover svg {
-  opacity: 1;
+.main-nav__link:hover .main-nav__icon {
   fill: currentColor;
+  transition: 250ms;
   color: #63d1bb;
+  opacity: 1;
 }
 
 .main-nav__link:active .main-nav__icon {
   fill: #63d1bb;
   opacity: 0.3;
+  transition: 250ms;
 }
 
 .main-nav__text--search {

@@ -22,7 +22,7 @@
   @media (min-width: @desktop-width) {
     background-image: url("../img/zigzag-fill-desktop.svg");
     bottom: -5px;
-    left: 10px;
+    background-position: 10px 0;
     background-size: 1250px 34px;
     height: 34px;
   }
@@ -59,23 +59,18 @@
 
 .catalog__item:hover {
   transform: translateY(-5px);
+  transition: 250ms;
 }
 
 .catalog__item--interior:hover {
   background-color: #59d5bc;
+  transition: 250ms;
 }
 
 .catalog__item--childs:hover {
   background-color: #46c1ae;
+  transition: 250ms;
 }
-
-// .catalog__item--interior:active {
-//   background-color: #59d5bc;
-// }
-
-// .catalog__item--childs:active {
-//   background-color: #46c1ae;
-// }
 
 .catalog__item--childs {
   background-color: #56c3b2;
@@ -118,10 +113,12 @@
 
 .catalog__link:hover::after {
   opacity: 0.7;
+  transition: 250ms;
 }
 
 .catalog__link:active::after {
   opacity: 0.3;
+  transition: 250ms;
 }
 
 .catalog__link--interior::after {

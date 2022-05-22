@@ -2,9 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest">
+    <link rel="icon" href="img/favicons/icon.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -98,11 +98,14 @@
                 <span class="products__description small-text">Рост 30 см, вес 200 г</span>
               </div>
               <button class="products__price" type="button">1 200 руб.</button>
-            </d>
+            </div>
           </li>
           <li class="products__item">
             <a class="products__img-link" href="#">
               <picture class="products__container">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-2-desktop.webp 1x, img/product-2-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-2-tablet.webp 1x, img/product-2-tablet@2.webp 2x">
+                <source type="image/webp" srcset="img/product-2-mobile.webp 1x, img/product-2-mobile@2.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/product-2-desktop.jpg 1x, img/product-2-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/product-2-tablet.jpg 1x, img/product-2-tablet@2.jpg 2x">
                 <img class="products__img" alt="Фотография товара" src="img/product-2-mobile.jpg" srcset="img/product-2-mobile@2.jpg 2x">
@@ -119,6 +122,9 @@
           <li class="products__item">
             <a class="products__img-link" href="#">
               <picture class="products__container">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-3-desktop.webp 1x, img/product-3-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-3-tablet.webp 1x, img/product-3-tablet@2.webp 2x">
+                <source type="image/webp" srcset="img/product-3-mobile.webp 1x, img/product-3-mobile@2.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/product-3-desktop.jpg 1x, img/product-3-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/product-3-tablet.jpg 1x, img/product-3-tablet@2.jpg 2x">
                 <img class="products__img" alt="Фотография товара" src="img/product-3-mobile.jpg" srcset="img/product-3-mobile@2.jpg 2x">
@@ -129,7 +135,7 @@
                 <a class="products__name block-title" href="#">Большая корзинка<br>для игрушек</a>
                 <span class="products__description small-text">Диаметр 30 см, высота 30 см</span>
               </div>
-              <button class="products__price" tyoe="button">1 500 руб.</button>
+              <button class="products__price" type="button">1 500 руб.</button>
             </div>
           </li>
         </ul>
@@ -141,7 +147,9 @@
         </b>
         <div class="video__img-container">
           <img class="video__img" alt="Скриншот видео" src="img/video-desktop.png">
-          <button class="video__button" type="button"></button>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Кнопка проигрывания видео</span>
+          </button>
         </div>
         <span class="video__about small-text">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -188,7 +196,7 @@
         </ul>
         <a class="main-footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg class="main-footer__copiright-icon"width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-footer__copiright-icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#copi-link"/>
           </svg>
         </a>

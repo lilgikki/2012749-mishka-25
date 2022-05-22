@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest">
+    <link rel="icon" href="img/favicons/icon.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -134,6 +134,9 @@
           </dl>
         </div>
         <picture class="weekly-item__photo">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/weekly-item-desktop.webp 1x, img/weekly-item-desktop@2.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/weekly-item-tablet.webp 1x, img/weekly-item-tablet@2.webp 2x">
+          <source type="image/webp" srcset="img/weekly-item-mobile.webp 1x, weekly-item-mobile@2.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/weekly-item-desktop.jpg 1x, img/weekly-item-desktop@2.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/weekly-item-tablet.jpg 1x, img/weekly-item-tablet@2.jpg 2x">
           <img src="img/weekly-item-mobile.jpg" srcset="img/weekly-item-mobile@2.jpg 2x" alt="Фото товара недели">
@@ -265,7 +268,7 @@
         </ul>
         <a class="main-footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg class="main-footer__copiright-icon"width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-footer__copiright-icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#copi-link"/>
           </svg>
         </a>
