@@ -1,5 +1,6 @@
 .button-link {
   font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   font-size: 18px;
@@ -12,8 +13,21 @@
   width: 256px;
   padding-top: 14px;
   padding-bottom: 14px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
+}
+
+.button-link:hover {
+  background: #444444;
+  border: 2px solid #444444;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.button-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  transition: 250ms;
 }

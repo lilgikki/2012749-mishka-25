@@ -132,3 +132,27 @@
 .control__input--box:checked ~ .control__label--box::after {
   display: block;
 }
+
+.control__label:hover::before {
+  border-color: #62d1ba;
+  transition: 250ms;
+}
+
+.control__label:active::before {
+  border-color: rgba(0, 0, 0, 0.3);
+  transition: 250ms;
+}
+
+.control__text:focus-visible {
+  outline: none;
+}
+
+.control__text:hover {
+  border-color: #62d1ba;
+  transition: 250ms;
+}
+
+.control__text:active {
+  border-color: #62d1ba;
+  transition: 250ms;
+}

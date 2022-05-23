@@ -10,6 +10,7 @@
   display: none;
   width: 100%;
   position: absolute;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     bottom: -1px;
@@ -21,7 +22,7 @@
   @media (min-width: @desktop-width) {
     background-image: url("../img/zigzag-fill-desktop.svg");
     bottom: -5px;
-    left: 10px;
+    background-position: 10px 0;
     background-size: 1250px 34px;
     height: 34px;
   }
@@ -32,6 +33,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
+  background: linear-gradient(#59d5bc 50%, #46c1ae 50%);
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -53,6 +55,21 @@
   @media (min-width: @desktop-width) {
     width: 525px;
   }
+}
+
+.catalog__item:hover {
+  transform: translateY(-5px);
+  transition: 250ms;
+}
+
+.catalog__item--interior:hover {
+  background-color: #59d5bc;
+  transition: 250ms;
+}
+
+.catalog__item--childs:hover {
+  background-color: #46c1ae;
+  transition: 250ms;
 }
 
 .catalog__item--childs {
@@ -91,6 +108,17 @@
 .catalog__link::after {
   position: absolute;
   content: "";
+  opacity: 0.5;
+}
+
+.catalog__link:hover::after {
+  opacity: 0.7;
+  transition: 250ms;
+}
+
+.catalog__link:active::after {
+  opacity: 0.3;
+  transition: 250ms;
 }
 
 .catalog__link--interior::after {
