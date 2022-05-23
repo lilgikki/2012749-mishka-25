@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link rel="preload" href="img/hero-mobile@2.webp" as="image">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="fonts/opensans.woff2" as="font/woff2" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="img/favicons/icon.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +22,9 @@
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-              <img class="main-nav__pic" src="img/mishka-logo-mobile.svg" alt="Магазин «Мишка»">
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="149" height="72">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="114" height="46">
+              <img class="main-nav__pic" src="img/mishka-logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
             </picture>
           </a>
           <ul class="main-nav__list main-nav__list--site site-list list">
@@ -134,12 +137,12 @@
           </dl>
         </div>
         <picture class="weekly-item__photo">
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/weekly-item-desktop.webp 1x, img/weekly-item-desktop@2.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/weekly-item-tablet.webp 1x, img/weekly-item-tablet@2.webp 2x">
-          <source type="image/webp" srcset="img/weekly-item-mobile.webp 1x, img/weekly-item-mobile@2.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/weekly-item-desktop.jpg 1x, img/weekly-item-desktop@2.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/weekly-item-tablet.jpg 1x, img/weekly-item-tablet@2.jpg 2x">
-          <img src="img/weekly-item-mobile.jpg" srcset="img/weekly-item-mobile@2.jpg 2x" alt="Фото товара недели">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/weekly-item-desktop.webp 1x, img/weekly-item-desktop@2.webp 2x" width="525" height="636">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/weekly-item-tablet.webp 1x, img/weekly-item-tablet@2.webp 2x" width="334" height="404">
+          <source type="image/webp" srcset="img/weekly-item-mobile.webp 1x, img/weekly-item-mobile@2.webp 2x" width="260" height="315">
+          <source media="(min-width: 1150px)" srcset="img/weekly-item-desktop.jpg 1x, img/weekly-item-desktop@2.jpg 2x" width="525" height="636">
+          <source media="(min-width: 768px)" srcset="img/weekly-item-tablet.jpg 1x, img/weekly-item-tablet@2.jpg 2x" width="334" height="404">
+          <img src="img/weekly-item-mobile.jpg" srcset="img/weekly-item-mobile@2.jpg 2x" alt="Фото товара недели" width="260" height="315">
         </picture>
         <div class="weekly-item__container weekly-item__container--buy">
           <p class="weekly-item__price">Цена: 990 руб.</p>

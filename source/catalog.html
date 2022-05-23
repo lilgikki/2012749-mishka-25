@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="img/favicons/icon.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +21,9 @@
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-              <img class="main-nav__pic" src="img/mishka-logo-mobile.svg" alt="Магазин «Мишка»">
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="149" height="72">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="114" height="46">
+              <img class="main-nav__pic" src="img/mishka-logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
             </picture>
           </a>
           <ul class="main-nav__list main-nav__list--site site-list list">
@@ -84,12 +86,12 @@
           <li class="products__item">
             <a class="products__img-link" href="#">
               <picture class="products__container">
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-1-desktop.webp 1x, img/product-1-desktop@2.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-1-tablet.webp 1x, img/product-1-tablet@2.webp 2x">
-                <source type="image/webp" srcset="img/product-1-mobile.webp 1x, img/product-1-mobile@2.webp 2x">
-                <source media="(min-width: 1150px)" srcset="img/product-1-desktop.jpg 1x, img/product-1-desktop@2.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/product-1-tablet.jpg 1x, img/product-1-tablet@2.jpg 2x">
-                <img class="products__img" alt="Фотография товара" src="img/product-1-mobile.jpg" srcset="img/product-1-mobile@2.jpg 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-1-desktop.webp 1x, img/product-1-desktop@2.webp 2x" width="316" height="462">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-1-tablet.webp 1x, img/product-1-tablet@2.webp 2x" width="334" height="334">
+                <source type="image/webp" srcset="img/product-1-mobile.webp 1x, img/product-1-mobile@2.webp 2x" width="260" height="195">
+                <source media="(min-width: 1150px)" srcset="img/product-1-desktop.jpg 1x, img/product-1-desktop@2.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/product-1-tablet.jpg 1x, img/product-1-tablet@2.jpg 2x" width="334" height="334">
+                <img class="products__img" alt="Фотография товара" src="img/product-1-mobile.jpg" srcset="img/product-1-mobile@2.jpg 2x" width="260" height="195">
               </picture>
             </a>
             <div class="products__add">
@@ -103,12 +105,12 @@
           <li class="products__item">
             <a class="products__img-link" href="#">
               <picture class="products__container">
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-2-desktop.webp 1x, img/product-2-desktop@2.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-2-tablet.webp 1x, img/product-2-tablet@2.webp 2x">
-                <source type="image/webp" srcset="img/product-2-mobile.webp 1x, img/product-2-mobile@2.webp 2x">
-                <source media="(min-width: 1150px)" srcset="img/product-2-desktop.jpg 1x, img/product-2-desktop@2.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/product-2-tablet.jpg 1x, img/product-2-tablet@2.jpg 2x">
-                <img class="products__img" alt="Фотография товара" src="img/product-2-mobile.jpg" srcset="img/product-2-mobile@2.jpg 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-2-desktop.webp 1x, img/product-2-desktop@2.webp 2x" width="316" height="462">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-2-tablet.webp 1x, img/product-2-tablet@2.webp 2x" width="334" height="334">
+                <source type="image/webp" srcset="img/product-2-mobile.webp 1x, img/product-2-mobile@2.webp 2x" width="260" height="195">
+                <source media="(min-width: 1150px)" srcset="img/product-2-desktop.jpg 1x, img/product-2-desktop@2.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/product-2-tablet.jpg 1x, img/product-2-tablet@2.jpg 2x" width="334" height="334">
+                <img class="products__img" alt="Фотография товара" src="img/product-2-mobile.jpg" srcset="img/product-2-mobile@2.jpg 2x" width="260" height="195">
               </picture>
             </a>
             <div class="products__add">
@@ -122,12 +124,12 @@
           <li class="products__item">
             <a class="products__img-link" href="#">
               <picture class="products__container">
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-3-desktop.webp 1x, img/product-3-desktop@2.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-3-tablet.webp 1x, img/product-3-tablet@2.webp 2x">
-                <source type="image/webp" srcset="img/product-3-mobile.webp 1x, img/product-3-mobile@2.webp 2x">
-                <source media="(min-width: 1150px)" srcset="img/product-3-desktop.jpg 1x, img/product-3-desktop@2.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/product-3-tablet.jpg 1x, img/product-3-tablet@2.jpg 2x">
-                <img class="products__img" alt="Фотография товара" src="img/product-3-mobile.jpg" srcset="img/product-3-mobile@2.jpg 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-3-desktop.webp 1x, img/product-3-desktop@2.webp 2x" width="316" height="462">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-3-tablet.webp 1x, img/product-3-tablet@2.webp 2x" width="334" height="334">
+                <source type="image/webp" srcset="img/product-3-mobile.webp 1x, img/product-3-mobile@2.webp 2x" width="260" height="195">
+                <source media="(min-width: 1150px)" srcset="img/product-3-desktop.jpg 1x, img/product-3-desktop@2.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/product-3-tablet.jpg 1x, img/product-3-tablet@2.jpg 2x" width="334" height="334">
+                <img class="products__img" alt="Фотография товара" src="img/product-3-mobile.jpg" srcset="img/product-3-mobile@2.jpg 2x" width="260" height="195">
               </picture>
             </a>
             <div class="products__add products__add--long-name">
@@ -146,7 +148,7 @@
           Процесс производства
         </b>
         <div class="video__img-container">
-          <img class="video__img" alt="Скриншот видео" src="img/video-desktop.png">
+          <img class="video__img" alt="Скриншот видео" src="img/video-desktop.webp">
           <button class="video__button" type="button">
             <span class="visually-hidden">Кнопка проигрывания видео</span>
           </button>
