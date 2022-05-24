@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="img/favicons/icon.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header main-header--add">
@@ -19,9 +21,9 @@
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-              <img class="main-nav__pic" src="img/mishka-logo-mobile.svg" alt="Магазин «Мишка»">
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="149" height="72">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="114" height="46">
+              <img class="main-nav__pic" src="img/mishka-logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
             </picture>
           </a>
           <ul class="main-nav__list main-nav__list--site site-list list">
@@ -235,6 +237,6 @@
         </a>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
   </body>
 </html>
