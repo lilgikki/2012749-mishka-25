@@ -48,13 +48,15 @@
                 <span class="main-nav__text main-nav__text--search">Поиск по сайту</span>
               </a>
             </li>
-            <li class="main-nav__item user-list__item">
-              <a class="main-nav__link user-list__link user-list__link--cart" href="#">
-                <svg class="main-nav__icon user-icon user-icon--cart" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon-cart"/>
-                </svg>
-                <span class="main-nav__text">Корзина: пока пуста</span>
-              </a>
+            <li class="main-nav__item user-list__item user-list__item--cart">
+              <div class="main-nav__link user-list__link user-list__link--cart">
+                <button class="main-nav__icon user-icon user-icon--cart" href="#">
+                  <svg class="user-icon__svg" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#icon-cart"/>
+                  </svg>
+                </button>
+                <span class="main-nav__text main-nav__text--cart">Корзина: пока пуста</span>
+              </div>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list--prom catalog-promotions list">
