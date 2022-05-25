@@ -161,6 +161,7 @@
 }
 
 .contacts__map {
+  position: relative;
   display: block;
   height: 454px;
   border: none;
@@ -175,4 +176,20 @@
     grid-area: 1 / 4 / 3 / 7;
     margin-bottom: 0;
   }
+}
+
+.contacts__map::after {
+  z-index: 1;
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/map-pin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

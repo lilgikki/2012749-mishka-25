@@ -8,7 +8,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 108px auto 53px;
+    margin: 109px auto 56px;
     width: 1050px;
   }
 }
@@ -29,6 +29,7 @@
   display: flex;
   margin-bottom: 30px;
   flex-direction: column;
+  border: 1px solid #ececec;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -66,23 +67,22 @@
 .products__container {
   display: block;
   height: 195px;
+  background-color: #ececec;
 
   @media (min-width: @tablet-width) {
-    width: 334px;
-    height: 334px;
+    width: 333px;
+    height: 332px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 316px;
-    height: 462px;
+    width: 314px;
+    height: 461px;
   }
 }
 
 .products__add {
   text-align: start;
   background-color: #ffffff;
-  border: 1px solid #ececec;
-  border-top: none;
   display: block;
   width: 206px;
   padding: 29px 25px 26px 27px;
@@ -91,27 +91,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-top: 1px solid #ececec;
-    border-left: none;
     width: 266px;
-    height: 283px;
-    padding: 26px 33px 24px 35px;
+    min-height: 283px;
+    padding: 26px 33px 23px 34px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 28px 35px 25px 26px;
-    border: 1px solid #ececec;
-    border-top: none;
+    padding: 28px 35px 23px 26px;
     width: 253px;
-    height: 145px;
+    min-height: 145px;
   }
 }
 
 .products__add--long-name {
   padding-top: 25px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 26px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-top: 30px;
+    padding-top: 28px;
   }
 }
 
@@ -125,6 +125,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 7px;
   }
 }
 
@@ -141,7 +142,7 @@
 .products__add--long-name .products__name {
   margin-bottom: 9px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 5px;
   }
 }
@@ -151,10 +152,9 @@
   display: block;
   font-size: 13px;
   line-height: 30px;
-  padding-bottom: 17px;
+  padding-bottom: 13px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
     font-size: 15px;
     line-height: 30px;
   }
@@ -179,8 +179,14 @@
   line-height: 24px;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 3px;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    padding-top: 24px;
   }
 }
 

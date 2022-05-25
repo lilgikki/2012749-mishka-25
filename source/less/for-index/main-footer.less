@@ -65,11 +65,14 @@
 }
 
 .main-footer__socials {
-  width: 142px;
-  height: 27px;
+  min-width: 142px;
+  max-width: 265px;
+  height: fit-content;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   padding-bottom: 28px;
 
@@ -77,6 +80,7 @@
     padding: 0;
     padding-top: 4px;
     padding-left: 1px;
+    margin-left: 30px;
   }
 }
 
@@ -84,14 +88,19 @@
   margin: 0;
   padding: 0;
   display: block;
+  margin-right: 30px;
+}
+
+.main-footer__item:nth-of-type(5n+5) {
+  margin-right: 0;
+}
+
+.main-footer__item--vk {
+  margin-right: 31px;
 }
 
 .main-footer__item--yt {
-  margin-left: 31px;
-}
-
-.main-footer__item--tg {
-  margin-left: 34px;
+  margin-right: 34px;
 }
 
 .main-footer__link {
