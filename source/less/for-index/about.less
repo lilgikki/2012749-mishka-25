@@ -94,7 +94,9 @@
 }
 
 .about__item--eco {
-  grid-area: eco;
+  @media (min-width: @tablet-width) {
+    grid-area: eco;
+  }
 }
 
 .about__item--eco::before {
@@ -112,7 +114,9 @@
 }
 
 .about__item--style {
-  grid-area: style;
+  @media (min-width: @tablet-width) {
+    grid-area: style;
+  }
 }
 
 .about__item--style::before {
@@ -133,7 +137,9 @@
 }
 
 .about__item--likes {
-  grid-area: likes;
+  @media (min-width: @tablet-width) {
+    grid-area: likes;
+  }
 }
 
 .about__item--likes::before {
@@ -142,7 +148,7 @@
   height: 27px;
   margin-top: 4px;
   margin-left: 7px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   background-image: url("../img/about-3.svg");
   background-repeat: no-repeat;
 
@@ -152,7 +158,9 @@
 }
 
 .about__item--love {
-  grid-area: love;
+  @media (min-width: @tablet-width) {
+    grid-area: love;
+  };
 }
 
 .about__item--love::before {
@@ -172,7 +180,9 @@
 }
 
 .about__item--help {
-  grid-area: help;
+  @media (min-width: @tablet-width) {
+    grid-area: help;
+  }
 }
 
 .about__item--help::before {
@@ -190,7 +200,9 @@
 }
 
 .about__item--gift {
-  grid-area: gift;
+  @media (min-width: @tablet-width) {
+    grid-area: gift;
+  }
 }
 
 .about__item--gift::before {
@@ -199,7 +211,7 @@
   height: 32px;
   margin-left: 3px;
   margin-top: 1px;
-  margin-bottom: 2px;
+  margin-bottom: 22px;
   background-image: url("../img/about-6.svg");
   background-repeat: no-repeat;
 
