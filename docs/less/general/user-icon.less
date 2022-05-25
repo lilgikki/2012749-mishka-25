@@ -1,0 +1,34 @@
+.user-icon {
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  top: 32px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+
+.user-icon--search {
+  opacity: 0.2;
+}
+
+.user-icon--cart {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 31px;
+    top: 4px;
+  }
+}
+
+.user-icon__svg {
+  opacity: 0.2;
+}

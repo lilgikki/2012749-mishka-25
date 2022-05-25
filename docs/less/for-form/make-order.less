@@ -1,0 +1,133 @@
+.make-order {
+  margin: 0 auto;
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   width: 1050px;
+  // }
+}
+
+.make-order__container {
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
+}
+
+.make-order__container--gray {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+}
+
+.make-order__container--last {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.make-order__group {
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-top: solid 1px #62d1ba;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 668px;
+    display: flex;
+    border: none;
+    padding: 48px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 990px;
+    padding-left: 60px;
+  }
+}
+
+.make-order__title {
+  padding: 0;
+  width: 59px;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 66px;
+    flex-direction: row-reverse;
+    width: 167px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 115px;
+  }
+}
+
+.make-order__important {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 175px;
+  }
+}
+
+.make-order__submit {
+  width: 100%;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  margin-bottom: 55px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+    margin-bottom: 50px;
+    width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
+    margin-top: 50px;
+    margin-bottom: 48px;
+  }
+}
+
+.make-order__list {
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}

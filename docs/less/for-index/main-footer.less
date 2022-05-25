@@ -1,0 +1,126 @@
+.main-footer {
+  background-color: #f1f1f1;
+  padding: 25px 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 55px;
+  }
+}
+
+.main-footer__inner {
+  max-width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 668px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+  }
+}
+
+.main-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.main-footer__social-icon {
+  fill: #231f20;
+}
+
+.main-footer__copiright-icon {
+  fill: #63d1bb;
+}
+
+.main-footer__logo-icon:hover,
+.main-footer__social-icon:hover,
+.main-footer__copiright-link:hover .main-footer__copiright-icon {
+  fill: #46c1ae;
+  transition: 250ms;
+}
+
+.main-footer__logo-icon:active,
+.main-footer__social-icon:active,
+.main-footer__copiright-link:active .main-footer__copiright-icon {
+  fill: #46c1ae;
+  opacity: 0.3;
+  transition: 250ms;
+}
+
+.main-footer__socials {
+  min-width: 142px;
+  max-width: 265px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 4px;
+    padding-left: 1px;
+    margin-left: 30px;
+  }
+}
+
+.main-footer__item {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-right: 30px;
+}
+
+.main-footer__item:nth-of-type(5n+5) {
+  margin-right: 0;
+}
+
+.main-footer__item--vk {
+  margin-right: 31px;
+}
+
+.main-footer__item--yt {
+  margin-right: 34px;
+}
+
+.main-footer__link {
+  display: flex;
+}
+
+.main-footer__copiright-link {
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 39px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 183px;
+  font-size: 19px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding: 0;
+  }
+}
