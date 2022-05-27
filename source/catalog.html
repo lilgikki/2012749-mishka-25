@@ -48,14 +48,12 @@
               </a>
             </li>
             <li class="main-nav__item user-list__item user-list__item--cart">
-              <div class="main-nav__link user-list__link user-list__link--cart">
-                <button class="main-nav__icon user-icon user-icon--cart" href="#">
-                  <svg class="user-icon__svg" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#icon-cart"/>
-                  </svg>
-                </button>
+              <a class="main-nav__link user-list__link user-list__link--cart" href="#">
+                <svg class="main-nav__icon user-icon user-icon--cart" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-cart"/>
+                </svg>
                 <span class="main-nav__text main-nav__text--cart">Корзина: пока пуста</span>
-              </div>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list--prom catalog-promotions list">
@@ -101,7 +99,10 @@
                 <a class="products__name block-title" href="#">Зайчик-попрыгайчик</a>
                 <span class="products__description small-text">Рост 30 см, вес 200 г</span>
               </div>
-              <button class="products__price" type="button">1 200 руб.</button>
+              <div class="products__price">
+                <span class="products__price-text">1 200 руб.</span>
+                <button class="products__cart"></button>
+              </div>
             </div>
           </li>
           <li class="products__item">
@@ -120,7 +121,10 @@
                 <a class="products__name block-title" href="#">Корзинка для белья</a>
                 <span class="products__description small-text">Диаметр 15 см, высота 10 см</span>
               </div>
-              <button class="products__price" type="button">690 руб.</button>
+              <div class="products__price">
+                <span class="products__price-text">690 руб.</span>
+                <button class="products__cart"></button>
+              </div>
             </div>
           </li>
           <li class="products__item">
@@ -139,7 +143,10 @@
                 <a class="products__name block-title" href="#">Большая корзинка<br>для игрушек</a>
                 <span class="products__description small-text">Диаметр 30 см, высота 30 см</span>
               </div>
-              <button class="products__price" type="button">1 500 руб.</button>
+              <div class="products__price">
+                <span class="products__price-text">1 500 руб.</span>
+                <button class="products__cart"></button>
+              </div>
             </div>
           </li>
         </ul>

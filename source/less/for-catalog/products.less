@@ -3,7 +3,7 @@
   margin: 30px auto 30px;
 
   @media (min-width: @tablet-width) {
-    margin: 67px auto 53px;
+    margin: 66px auto 53px;
     width: 668px;
   }
 
@@ -85,7 +85,7 @@
   background-color: #ffffff;
   display: block;
   width: 206px;
-  padding: 28px 25px 27px 27px;
+  padding: 28px 25px 26px 27px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -93,7 +93,7 @@
     justify-content: space-between;
     width: 266px;
     min-height: 283px;
-    padding: 26px 33px 23px 34px;
+    padding: 26px 33px 21px 34px;
   }
 
   @media (min-width: @desktop-width) {
@@ -162,27 +162,20 @@
 }
 
 .products__price {
-  color: #000000;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   border: none;
   background-color: #ffffff;
   position: relative;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
-  text-align: start;
-  padding-top: 22px;
+  padding-top: 23px;
   border-top: 1px #ececec solid;
   width: 100%;
-  display: block;
-  font-size: 15px;
-  line-height: 24px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 3px;
-    font-size: 17px;
-    line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -191,9 +184,28 @@
   }
 }
 
-.products__price::after {
-  position: absolute;
-  content: "";
+.products__price-text {
+  color: #000000;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+.products__add--long-name .products__price {
+  padding-top: 23px;
+}
+
+.products__cart {
+  padding: 0;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
   width: 21px;
   height: 18px;
   background-image: url("../img/catalog-cart.svg");
@@ -201,16 +213,12 @@
   right: 0;
 }
 
-.products__add--long-name .products__price {
-  padding-top: 23px;
-}
-
-.products__price:hover::after {
+.products__cart:hover {
   background-image: url("../img/catalog-cart--blue.svg");
   transition: 250ms;
 }
 
-.products__price:active::after {
+.products__cart:active {
   opacity: 0.3;
   transition: 250ms;
 }
